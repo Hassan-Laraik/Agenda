@@ -1,3 +1,10 @@
 /application/backup/
 /backup/
 /application/lib/
+backup
+/application/Contacts/backup/
+/application/Departement/backup/
+/application/DM/backup/
+/application/Principale/backup/
+/application/Societe/backup/
+

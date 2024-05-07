@@ -37,17 +37,26 @@ implementation
 
   procedure TFrmPrincipale.BtnSocieteClick(Sender: TObject);
   begin
-    FrmSociete.ShowModal;
+    //FrmSociete.ShowModal;
+    FrmSociete.ShowOnTop;
+    FrmSociete.PageControl1.ActivePage := FrmContact.TabSheet1;
+    FrmSociete.PageControl1.ShowTabs:=False;
   end;
 
 procedure TFrmPrincipale.BtnDepartementClick(Sender: TObject);
 begin
-  FrmDepartement.ShowModal;
+  //FrmDepartement.ShowModal;
+   FrmDepartement.ShowOnTop;
+    FrmDepartement.PageControl1.ActivePage := FrmContact.TabSheet1;
+    FrmDepartement.PageControl1.ShowTabs:=False;
 end;
 
 procedure TFrmPrincipale.BtnContactClick(Sender: TObject);
 begin
-  FrmContact.ShowModal;
+  //FrmContact.ShowModal;
+    FrmContact.ShowOnTop;
+    FrmContact.PageControl1.ActivePage := FrmContact.TabSheet1;
+    FrmContact.PageControl1.ShowTabs:=False;
 end;
 
 end.

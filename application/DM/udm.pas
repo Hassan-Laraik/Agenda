@@ -16,6 +16,12 @@ type
     DSdepartement: TDataSource;
     DSContact: TDataSource;
     ZNX: TZConnection;
+    ZtblContactgsm: TStringField;
+    ZtblContactidcontacts: TLongintField;
+    ZtblContactnom: TStringField;
+    ZtblContactnom_dep: TStringField;
+    ZtblContactphoto: TBlobField;
+    ZtblContactrs: TStringField;
     ZtblSociete: TZTable;
     ZtblDepartement: TZTable;
     ZtblContact: TZTable;
