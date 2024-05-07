@@ -1,0 +1,166 @@
+object FrmContact: TFrmContact
+  Left = 219
+  Height = 443
+  Top = 192
+  Width = 764
+  BorderStyle = bsDialog
+  Caption = 'FrmContact'
+  ClientHeight = 443
+  ClientWidth = 764
+  DesignTimePPI = 81
+  Position = poScreenCenter
+  LCLVersion = '3.0.0.1'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 401
+    Top = 0
+    Width = 764
+    ActivePage = TabSheet2
+    Align = alClient
+    TabIndex = 1
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'TabSheet1'
+      ClientHeight = 371
+      ClientWidth = 754
+      object Panel3: TPanel
+        Left = 0
+        Height = 42
+        Top = 0
+        Width = 754
+        Align = alTop
+        Caption = 'Panel3'
+        ClientHeight = 42
+        ClientWidth = 754
+        TabOrder = 0
+        object EdtRecherche: TEdit
+          Left = 127
+          Height = 40
+          Top = 1
+          Width = 500
+          Align = alClient
+          Alignment = taCenter
+          TabOrder = 0
+        end
+        object BtnPrior: TButton
+          Left = 64
+          Height = 40
+          Top = 1
+          Width = 63
+          Align = alLeft
+          Caption = 'Avant'
+          TabOrder = 1
+        end
+        object BtnLast: TButton
+          Left = 690
+          Height = 40
+          Top = 1
+          Width = 63
+          Align = alRight
+          Caption = 'Fin'
+          TabOrder = 2
+        end
+        object BtnNext: TButton
+          Left = 627
+          Height = 40
+          Top = 1
+          Width = 63
+          Align = alRight
+          Caption = 'Suivant'
+          TabOrder = 3
+        end
+        object BtnFirst: TButton
+          Left = 1
+          Height = 40
+          Top = 1
+          Width = 63
+          Align = alLeft
+          Caption = 'Debut'
+          TabOrder = 4
+        end
+      end
+      object Panel2: TPanel
+        Left = 0
+        Height = 42
+        Top = 329
+        Width = 754
+        Align = alBottom
+        Caption = 'Panel2'
+        ClientHeight = 42
+        ClientWidth = 754
+        TabOrder = 1
+        object BtnNouveau: TButton
+          Left = 523
+          Height = 40
+          Top = 1
+          Width = 115
+          Align = alRight
+          Caption = 'BtnNouveau'
+          TabOrder = 0
+        end
+        object BtnModifier: TButton
+          Left = 638
+          Height = 40
+          Top = 1
+          Width = 115
+          Align = alRight
+          Caption = 'BtnModifier'
+          TabOrder = 1
+        end
+      end
+      object DBGrid1: TDBGrid
+        Left = 0
+        Height = 287
+        Top = 42
+        Width = 754
+        Align = alClient
+        Color = clWindow
+        Columns = <>
+        TabOrder = 2
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'TabSheet2'
+      ClientHeight = 371
+      ClientWidth = 754
+      object Panel5: TPanel
+        Left = 0
+        Height = 42
+        Top = 329
+        Width = 754
+        Align = alBottom
+        Caption = 'Panel5'
+        ClientHeight = 42
+        ClientWidth = 754
+        TabOrder = 0
+        object BtnAnnuler: TButton
+          Left = 690
+          Height = 40
+          Top = 1
+          Width = 63
+          Align = alRight
+          Caption = 'Annuler'
+          TabOrder = 0
+        end
+        object BtnValider: TButton
+          Left = 627
+          Height = 40
+          Top = 1
+          Width = 63
+          Align = alRight
+          Caption = 'Valider'
+          TabOrder = 1
+        end
+      end
+    end
+  end
+  object Panel4: TPanel
+    Left = 0
+    Height = 42
+    Top = 401
+    Width = 764
+    Align = alBottom
+    Caption = 'Panel4'
+    TabOrder = 1
+  end
+end

@@ -1,0 +1,57 @@
+object FrmPrincipale: TFrmPrincipale
+  Left = 209
+  Height = 551
+  Top = 140
+  Width = 1048
+  Caption = 'FrmPrincipale'
+  ClientHeight = 551
+  ClientWidth = 1048
+  DesignTimePPI = 81
+  LCLVersion = '3.0.0.1'
+  WindowState = wsMaximized
+  object Panel1: TPanel
+    Left = 0
+    Height = 42
+    Top = 0
+    Width = 1048
+    Align = alTop
+    Caption = 'Panel1'
+    TabOrder = 0
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 42
+    Top = 509
+    Width = 1048
+    Align = alBottom
+    Caption = 'Panel2'
+    TabOrder = 1
+  end
+  object BtnSociete: TButton
+    Left = 56
+    Height = 66
+    Top = 56
+    Width = 370
+    Caption = 'Societe...'
+    OnClick = BtnSocieteClick
+    TabOrder = 2
+  end
+  object BtnDepartement: TButton
+    Left = 56
+    Height = 66
+    Top = 136
+    Width = 370
+    Caption = 'Departement...'
+    OnClick = BtnDepartementClick
+    TabOrder = 3
+  end
+  object BtnContact: TButton
+    Left = 56
+    Height = 66
+    Top = 224
+    Width = 370
+    Caption = 'Contacts...'
+    OnClick = BtnContactClick
+    TabOrder = 4
+  end
+end

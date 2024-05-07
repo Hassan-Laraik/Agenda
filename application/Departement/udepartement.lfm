@@ -1,0 +1,353 @@
+object FrmDepartement: TFrmDepartement
+  Left = 225
+  Height = 482
+  Top = 157
+  Width = 826
+  BorderStyle = bsDialog
+  Caption = 'FrmDepartement'
+  ClientHeight = 482
+  ClientWidth = 826
+  DesignTimePPI = 81
+  Position = poScreenCenter
+  LCLVersion = '3.0.0.1'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 440
+    Top = 0
+    Width = 826
+    ActivePage = TabSheet1
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'TabSheet1'
+      ClientHeight = 410
+      ClientWidth = 816
+      object Panel3: TPanel
+        Left = 0
+        Height = 42
+        Top = 0
+        Width = 816
+        Align = alTop
+        Caption = 'Panel3'
+        ClientHeight = 42
+        ClientWidth = 816
+        TabOrder = 0
+        object EdtRecherche: TEdit
+          Left = 127
+          Height = 33
+          Top = 1
+          Width = 577
+          Alignment = taCenter
+          TabOrder = 0
+        end
+        object BtnPrior: TButton
+          Left = 64
+          Height = 40
+          Top = 1
+          Width = 63
+          Align = alLeft
+          Caption = 'Avant'
+          TabOrder = 1
+        end
+        object BtnLast: TButton
+          Left = 752
+          Height = 40
+          Top = 1
+          Width = 63
+          Align = alRight
+          Caption = 'Fin'
+          TabOrder = 2
+        end
+        object BtnNext: TButton
+          Left = 689
+          Height = 40
+          Top = 1
+          Width = 63
+          Align = alRight
+          Caption = 'Suivant'
+          TabOrder = 3
+        end
+        object BtnFirst: TButton
+          Left = 1
+          Height = 40
+          Top = 1
+          Width = 63
+          Align = alLeft
+          Caption = 'Debut'
+          TabOrder = 4
+        end
+      end
+      object Panel2: TPanel
+        Left = 0
+        Height = 42
+        Top = 368
+        Width = 816
+        Align = alBottom
+        Caption = 'Panel2'
+        ClientHeight = 42
+        ClientWidth = 816
+        TabOrder = 1
+        object BtnNouveau: TButton
+          Left = 585
+          Height = 40
+          Top = 1
+          Width = 115
+          Align = alRight
+          Caption = 'BtnNouveau'
+          OnClick = BtnNouveauClick
+          TabOrder = 0
+        end
+        object BtnModifier: TButton
+          Left = 700
+          Height = 40
+          Top = 1
+          Width = 115
+          Align = alRight
+          Caption = 'BtnModifier'
+          OnClick = BtnModifierClick
+          TabOrder = 1
+        end
+      end
+      object DBGrid1: TDBGrid
+        Left = 0
+        Height = 326
+        Top = 42
+        Width = 816
+        Align = alClient
+        AutoFillColumns = True
+        Color = clWindow
+        Columns = <>
+        DataSource = DM.DSdepartement
+        TabOrder = 2
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'TabSheet2'
+      ClientHeight = 410
+      ClientWidth = 816
+      object Panel5: TPanel
+        Left = 0
+        Height = 42
+        Top = 368
+        Width = 816
+        Align = alBottom
+        Caption = 'Panel5'
+        ClientHeight = 42
+        ClientWidth = 816
+        TabOrder = 0
+        object BtnAnnuler: TButton
+          Left = 752
+          Height = 40
+          Top = 1
+          Width = 63
+          Align = alRight
+          Caption = 'Annuler'
+          OnClick = BtnAnnulerClick
+          TabOrder = 0
+        end
+        object BtnValider: TButton
+          Left = 689
+          Height = 40
+          Top = 1
+          Width = 63
+          Align = alRight
+          Caption = 'Valider'
+          OnClick = BtnValiderClick
+          TabOrder = 1
+        end
+      end
+      object Panel1: TPanel
+        Left = 0
+        Height = 42
+        Top = 30
+        Width = 816
+        Align = alTop
+        BorderSpacing.Top = 30
+        Caption = 'Panel1'
+        ClientHeight = 42
+        ClientWidth = 816
+        TabOrder = 1
+        object Label1: TLabel
+          Left = 1
+          Height = 40
+          Top = 1
+          Width = 151
+          Align = alLeft
+          Alignment = taCenter
+          AutoSize = False
+          Caption = 'Departement'
+          Color = 15348531
+          Font.Color = clWhite
+          Font.Height = -12
+          Font.Name = 'Sans'
+          Font.Style = [fsBold]
+          Layout = tlCenter
+          ParentColor = False
+          ParentFont = False
+          Transparent = False
+        end
+        object DBedtDepartement: TDBEdit
+          Left = 152
+          Height = 40
+          Top = 1
+          Width = 448
+          DataField = 'nom_dep'
+          DataSource = DM.DSdepartement
+          Align = alLeft
+          MaxLength = 45
+          TabOrder = 0
+        end
+      end
+      object Panel6: TPanel
+        Left = 0
+        Height = 42
+        Top = 82
+        Width = 816
+        Align = alTop
+        BorderSpacing.Top = 10
+        Caption = 'Panel6'
+        ClientHeight = 42
+        ClientWidth = 816
+        TabOrder = 2
+        object Label2: TLabel
+          Left = 1
+          Height = 40
+          Top = 1
+          Width = 151
+          Align = alLeft
+          Alignment = taCenter
+          AutoSize = False
+          Caption = 'Fonction'
+          Color = 15348531
+          Font.Color = clWhite
+          Font.Height = -12
+          Font.Name = 'Sans'
+          Font.Style = [fsBold]
+          Layout = tlCenter
+          ParentColor = False
+          ParentFont = False
+          Transparent = False
+        end
+        object DBedtFonction: TDBComboBox
+          Left = 152
+          Height = 40
+          Top = 1
+          Width = 672
+          Align = alLeft
+          DataField = 'fonction'
+          DataSource = DM.DSdepartement
+          ItemHeight = 0
+          Items.Strings = (
+            'Directeur'
+            'Secretaire'
+            'Ingenieur'
+            'Technicien'
+            'Chef de Poste'
+            'Chef Equipe'
+            'Maitrise'
+            'Personnel'
+            'Assistant'
+            'Autre'
+          )
+          MaxLength = 45
+          TabOrder = 0
+        end
+      end
+      object Panel8: TPanel
+        Left = 0
+        Height = 42
+        Top = 134
+        Width = 816
+        Align = alTop
+        BorderSpacing.Top = 10
+        Caption = 'Panel8'
+        ClientHeight = 42
+        ClientWidth = 816
+        TabOrder = 3
+        object Label4: TLabel
+          Left = 1
+          Height = 40
+          Top = 1
+          Width = 151
+          Align = alLeft
+          Alignment = taCenter
+          AutoSize = False
+          Caption = 'Telephone'
+          Color = 15348531
+          Font.Color = clWhite
+          Font.Height = -12
+          Font.Name = 'Sans'
+          Font.Style = [fsBold]
+          Layout = tlCenter
+          ParentColor = False
+          ParentFont = False
+          Transparent = False
+        end
+        object DBedtPhone: TDBEdit
+          Left = 152
+          Height = 40
+          Top = 1
+          Width = 448
+          DataField = 'phone'
+          DataSource = DM.DSdepartement
+          Align = alLeft
+          MaxLength = 10
+          TabOrder = 0
+          OnKeyPress = DBedtPhoneKeyPress
+        end
+      end
+      object Panel9: TPanel
+        Left = 0
+        Height = 42
+        Top = 186
+        Width = 816
+        Align = alTop
+        BorderSpacing.Top = 10
+        Caption = 'Panel9'
+        ClientHeight = 42
+        ClientWidth = 816
+        TabOrder = 4
+        object Label5: TLabel
+          Left = 1
+          Height = 40
+          Top = 1
+          Width = 151
+          Align = alLeft
+          Alignment = taCenter
+          AutoSize = False
+          Caption = 'Adresse'
+          Color = 15348531
+          Font.Color = clWhite
+          Font.Height = -12
+          Font.Name = 'Sans'
+          Font.Style = [fsBold]
+          Layout = tlCenter
+          ParentColor = False
+          ParentFont = False
+          Transparent = False
+        end
+        object DBedtAdresse: TDBEdit
+          Left = 152
+          Height = 40
+          Top = 1
+          Width = 624
+          DataField = 'adresse'
+          DataSource = DM.DSdepartement
+          Align = alLeft
+          MaxLength = 200
+          TabOrder = 0
+        end
+      end
+    end
+  end
+  object Panel4: TPanel
+    Left = 0
+    Height = 42
+    Top = 440
+    Width = 826
+    Align = alBottom
+    Caption = 'Panel4'
+    TabOrder = 1
+  end
+end

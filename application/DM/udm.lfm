@@ -1,0 +1,60 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 346
+  HorizontalOffset = 228
+  VerticalOffset = 205
+  Width = 616
+  object ZtblSociete: TZTable
+    Connection = ZNX
+    Active = True
+    TableName = 'societes'
+    Left = 72
+    Top = 88
+  end
+  object ZtblDepartement: TZTable
+    Connection = ZNX
+    Active = True
+    TableName = 'departements'
+    Left = 184
+    Top = 88
+  end
+  object ZtblContact: TZTable
+    Connection = ZNX
+    Active = True
+    TableName = 'contacts'
+    Left = 296
+    Top = 96
+  end
+  object ZNX: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings=True'
+      'controls_cp=CP_UTF8'
+    )
+    Connected = True
+    HostName = 'localhost'
+    Port = 0
+    Database = 'agenda_contact'
+    User = 'root'
+    Password = '12345678'
+    Protocol = 'mysql-5'
+    Left = 176
+    Top = 24
+  end
+  object DSSociete: TDataSource
+    DataSet = ZtblSociete
+    Left = 54
+    Top = 187
+  end
+  object DSdepartement: TDataSource
+    DataSet = ZtblDepartement
+    Left = 169
+    Top = 188
+  end
+  object DSContact: TDataSource
+    DataSet = ZtblContact
+    Left = 312
+    Top = 184
+  end
+end
