@@ -23,6 +23,8 @@ type
     BtnValider: TButton;
     BtnAjouterPhoto: TButton;
     BtnEffacerPhoto: TButton;
+    BtnSociete: TButton;
+    BtnDepartement: TButton;
     CMBXDep: TDBLookupComboBox;
     DbedtNom: TDBEdit;
     DbedtGSM: TDBEdit;
@@ -53,6 +55,7 @@ type
     TabSheet2: TTabSheet;
     procedure BtnAjouterPhotoClick(Sender: TObject);
     procedure BtnAnnulerClick(Sender: TObject);
+    procedure BtnDepartementClick(Sender: TObject);
     procedure BtnEffacerPhotoClick(Sender: TObject);
     procedure BtnFirstClick(Sender: TObject);
     procedure BtnLastClick(Sender: TObject);
@@ -60,6 +63,7 @@ type
     procedure BtnNextClick(Sender: TObject);
     procedure BtnNouveauClick(Sender: TObject);
     procedure BtnPriorClick(Sender: TObject);
+    procedure BtnSocieteClick(Sender: TObject);
     procedure BtnValiderClick(Sender: TObject);
   private
     function Validation_Saisie(): Boolean;
@@ -72,7 +76,7 @@ var
   FrmContact: TFrmContact;
 
 implementation
-       uses UDM;
+       uses UDM,uSociete,uDepartement;
 {$R *.lfm}
 
        { TFrmContact }
@@ -95,6 +99,12 @@ procedure TFrmContact.BtnAnnulerClick(Sender: TObject);
 begin
    DM.ZtblContact.Cancel;
    PageControl1.ActivePage:=TabSheet1;
+end;
+
+procedure TFrmContact.BtnDepartementClick(Sender: TObject);
+begin
+  FrmDepartement.ShowModal;
+  DM.ZtblContact.FieldByName('nom_dep').AsString:=DM.ZtblDepartement.FieldByName('nom_dep').AsString;
 end;
 
 procedure TFrmContact.BtnEffacerPhotoClick(Sender: TObject);
@@ -133,6 +143,12 @@ end;
 procedure TFrmContact.BtnPriorClick(Sender: TObject);
 begin
   DM.ZtblContact.Prior;
+end;
+
+procedure TFrmContact.BtnSocieteClick(Sender: TObject);
+begin
+  FrmSociete.ShowModal;
+  DM.ZtblContact.FieldByName('rs').AsString:=DM.ZtblSociete.FieldByName('rs').AsString;
 end;
 
 procedure TFrmContact.BtnValiderClick(Sender: TObject);

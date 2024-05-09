@@ -1,42 +1,42 @@
 object FrmContact: TFrmContact
-  Left = 12
-  Height = 578
-  Top = 146
-  Width = 1242
+  Left = 42
+  Height = 529
+  Top = 154
+  Width = 1144
   BorderStyle = bsDialog
   Caption = 'FrmContact'
-  ClientHeight = 578
-  ClientWidth = 1242
+  ClientHeight = 529
+  ClientWidth = 1144
   DesignTimePPI = 81
   Position = poScreenCenter
   LCLVersion = '3.0.0.1'
   object PageControl1: TPageControl
     Left = 0
-    Height = 494
+    Height = 445
     Top = 42
-    Width = 957
+    Width = 859
     ActivePage = TabSheet2
     Align = alClient
     TabIndex = 1
     TabOrder = 0
     object TabSheet1: TTabSheet
       Caption = 'TabSheet1'
-      ClientHeight = 464
-      ClientWidth = 947
+      ClientHeight = 415
+      ClientWidth = 849
       object Panel3: TPanel
         Left = 0
         Height = 42
         Top = 0
-        Width = 947
+        Width = 849
         Align = alTop
         ClientHeight = 42
-        ClientWidth = 947
+        ClientWidth = 849
         TabOrder = 0
         object EdtRecherche: TEdit
           Left = 127
           Height = 40
           Top = 1
-          Width = 693
+          Width = 595
           Align = alClient
           Alignment = taCenter
           TabOrder = 0
@@ -52,7 +52,7 @@ object FrmContact: TFrmContact
           TabOrder = 1
         end
         object BtnLast: TButton
-          Left = 883
+          Left = 785
           Height = 40
           Top = 1
           Width = 63
@@ -62,7 +62,7 @@ object FrmContact: TFrmContact
           TabOrder = 2
         end
         object BtnNext: TButton
-          Left = 820
+          Left = 722
           Height = 40
           Top = 1
           Width = 63
@@ -85,15 +85,15 @@ object FrmContact: TFrmContact
       object Panel2: TPanel
         Left = 0
         Height = 42
-        Top = 422
-        Width = 947
+        Top = 373
+        Width = 849
         Align = alBottom
         Caption = 'Panel2'
         ClientHeight = 42
-        ClientWidth = 947
+        ClientWidth = 849
         TabOrder = 1
         object BtnNouveau: TButton
-          Left = 716
+          Left = 618
           Height = 40
           Top = 1
           Width = 115
@@ -103,7 +103,7 @@ object FrmContact: TFrmContact
           TabOrder = 0
         end
         object BtnModifier: TButton
-          Left = 831
+          Left = 733
           Height = 40
           Top = 1
           Width = 115
@@ -115,36 +115,36 @@ object FrmContact: TFrmContact
       end
       object DBGrid1: TDBGrid
         Left = 0
-        Height = 380
+        Height = 331
         Top = 42
-        Width = 947
+        Width = 849
         Align = alClient
         AutoFillColumns = True
         Color = clWindow
         Columns = <        
           item
             Title.Caption = 'idcontacts'
-            Width = 185
+            Width = 165
             FieldName = 'idcontacts'
           end        
           item
             Title.Caption = 'nom'
-            Width = 185
+            Width = 165
             FieldName = 'nom'
           end        
           item
             Title.Caption = 'gsm'
-            Width = 184
+            Width = 165
             FieldName = 'gsm'
           end        
           item
             Title.Caption = 'rs'
-            Width = 184
+            Width = 165
             FieldName = 'rs'
           end        
           item
             Title.Caption = 'nom_dep'
-            Width = 184
+            Width = 164
             FieldName = 'nom_dep'
           end>
         DataSource = DM.DSContact
@@ -153,19 +153,19 @@ object FrmContact: TFrmContact
     end
     object TabSheet2: TTabSheet
       Caption = 'TabSheet2'
-      ClientHeight = 464
-      ClientWidth = 947
+      ClientHeight = 415
+      ClientWidth = 849
       object Panel5: TPanel
         Left = 0
         Height = 42
-        Top = 422
-        Width = 947
+        Top = 373
+        Width = 849
         Align = alBottom
         ClientHeight = 42
-        ClientWidth = 947
+        ClientWidth = 849
         TabOrder = 0
         object BtnAnnuler: TButton
-          Left = 813
+          Left = 715
           Height = 40
           Top = 1
           Width = 133
@@ -175,7 +175,7 @@ object FrmContact: TFrmContact
           TabOrder = 0
         end
         object BtnValider: TButton
-          Left = 680
+          Left = 582
           Height = 40
           Top = 1
           Width = 133
@@ -189,11 +189,11 @@ object FrmContact: TFrmContact
         Left = 0
         Height = 42
         Top = 30
-        Width = 947
+        Width = 849
         Align = alTop
         BorderSpacing.Top = 30
         ClientHeight = 42
-        ClientWidth = 947
+        ClientWidth = 849
         TabOrder = 1
         object Label3: TLabel
           Left = 1
@@ -219,7 +219,7 @@ object FrmContact: TFrmContact
           Caption = 'Label4'
         end
         object Label5: TLabel
-          Left = 352
+          Left = 415
           Height = 40
           Top = 1
           Width = 100
@@ -250,7 +250,7 @@ object FrmContact: TFrmContact
           TabOrder = 0
         end
         object CMBXDep: TDBLookupComboBox
-          Left = 452
+          Left = 515
           Height = 40
           Top = 1
           Width = 292
@@ -264,16 +264,36 @@ object FrmContact: TFrmContact
           LookupCache = False
           TabOrder = 1
         end
+        object BtnSociete: TButton
+          Left = 352
+          Height = 40
+          Top = 1
+          Width = 63
+          Align = alLeft
+          Caption = '...'
+          OnClick = BtnSocieteClick
+          TabOrder = 2
+        end
+        object BtnDepartement: TButton
+          Left = 807
+          Height = 40
+          Top = 1
+          Width = 63
+          Align = alLeft
+          Caption = '....'
+          OnClick = BtnDepartementClick
+          TabOrder = 3
+        end
       end
       object Panel9: TPanel
         Left = 0
         Height = 42
         Top = 82
-        Width = 947
+        Width = 849
         Align = alTop
         BorderSpacing.Top = 10
         ClientHeight = 42
-        ClientWidth = 947
+        ClientWidth = 849
         TabOrder = 2
         object Label1: TLabel
           Left = 1
@@ -307,11 +327,11 @@ object FrmContact: TFrmContact
         Left = 0
         Height = 42
         Top = 134
-        Width = 947
+        Width = 849
         Align = alTop
         BorderSpacing.Top = 10
         ClientHeight = 42
-        ClientWidth = 947
+        ClientWidth = 849
         TabOrder = 3
         object Label2: TLabel
           Left = 1
@@ -346,18 +366,18 @@ object FrmContact: TFrmContact
   object Panel4: TPanel
     Left = 0
     Height = 42
-    Top = 536
-    Width = 1242
+    Top = 487
+    Width = 1144
     Align = alBottom
     TabOrder = 1
   end
   object Panel1: TPanel
-    Left = 957
-    Height = 494
+    Left = 859
+    Height = 445
     Top = 42
     Width = 285
     Align = alRight
-    ClientHeight = 494
+    ClientHeight = 445
     ClientWidth = 285
     TabOrder = 2
     object Panel6: TPanel
@@ -432,7 +452,7 @@ object FrmContact: TFrmContact
     Left = 0
     Height = 42
     Top = 0
-    Width = 1242
+    Width = 1144
     Align = alTop
     Caption = 'Gestion des Contacts'
     TabOrder = 3

@@ -1,7 +1,7 @@
 object FrmDepartement: TFrmDepartement
   Left = 97
   Height = 600
-  Top = 141
+  Top = 83
   Width = 1000
   BorderStyle = bsDialog
   Caption = 'FrmDepartement'

@@ -12,7 +12,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="25"/>
+        <UsageCount Value="27"/>
       </Unit>
       <Unit>
         <Filename Value="Principale/uprincipale.pas"/>
@@ -22,9 +22,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uPrincipale"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="32"/>
-        <CursorPos X="52" Y="39"/>
-        <UsageCount Value="25"/>
+        <TopLine Value="38"/>
+        <CursorPos X="4" Y="56"/>
+        <UsageCount Value="27"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -36,9 +36,8 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uSociete"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="56"/>
-        <CursorPos X="34" Y="73"/>
-        <UsageCount Value="25"/>
+        <CursorPos X="14"/>
+        <UsageCount Value="27"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -50,9 +49,8 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uDepartement"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="102"/>
-        <CursorPos X="64" Y="115"/>
-        <UsageCount Value="25"/>
+        <CursorPos X="18"/>
+        <UsageCount Value="27"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -64,9 +62,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uContact"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="137"/>
-        <CursorPos X="51" Y="162"/>
-        <UsageCount Value="25"/>
+        <TopLine Value="174"/>
+        <CursorPos X="29" Y="190"/>
+        <UsageCount Value="27"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -80,100 +78,12 @@
         <EditorIndex Value="2"/>
         <TopLine Value="12"/>
         <CursorPos X="45" Y="32"/>
-        <UsageCount Value="25"/>
+        <UsageCount Value="27"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="Contacts/ucontact.pas"/>
-        <Caret Line="70" Column="22" TopLine="53"/>
-      </Position>
-      <Position>
-        <Filename Value="Contacts/ucontact.pas"/>
-        <Caret Line="9" Column="41"/>
-      </Position>
-      <Position>
-        <Filename Value="Departement/udepartement.pas"/>
-        <Caret Line="73" Column="48" TopLine="54"/>
-      </Position>
-      <Position>
-        <Filename Value="Contacts/ucontact.pas"/>
-        <Caret Line="99" Column="39" TopLine="74"/>
-      </Position>
-      <Position>
-        <Filename Value="Departement/udepartement.pas"/>
-        <Caret Line="109" Column="50" TopLine="90"/>
-      </Position>
-      <Position>
-        <Filename Value="Contacts/ucontact.pas"/>
-        <Caret Line="100" Column="56" TopLine="75"/>
-      </Position>
-      <Position>
-        <Filename Value="Contacts/ucontact.pas"/>
-        <Caret Line="88" Column="50" TopLine="75"/>
-      </Position>
-      <Position>
-        <Filename Value="Departement/udepartement.pas"/>
-        <Caret Line="107" Column="28" TopLine="90"/>
-      </Position>
-      <Position>
-        <Filename Value="Contacts/ucontact.pas"/>
-        <Caret Line="93" Column="72" TopLine="73"/>
-      </Position>
-      <Position>
-        <Filename Value="Contacts/ucontact.pas"/>
-        <Caret Line="121" Column="21" TopLine="110"/>
-      </Position>
-      <Position>
-        <Filename Value="Contacts/ucontact.pas"/>
-        <Caret Line="139" Column="34" TopLine="122"/>
-      </Position>
-      <Position>
-        <Filename Value="Contacts/ucontact.pas"/>
-        <Caret Line="146" Column="34" TopLine="129"/>
-      </Position>
-      <Position>
-        <Filename Value="Contacts/ucontact.pas"/>
-        <Caret Line="105" Column="25" TopLine="103"/>
-      </Position>
-      <Position>
-        <Filename Value="Contacts/ucontact.pas"/>
-        <Caret Line="128" Column="24" TopLine="104"/>
-      </Position>
-      <Position>
-        <Filename Value="Contacts/ucontact.pas"/>
-        <Caret Line="123" Column="31" TopLine="105"/>
-      </Position>
-      <Position>
-        <Filename Value="Contacts/ucontact.pas"/>
-        <Caret Line="102" Column="40" TopLine="84"/>
-      </Position>
-      <Position>
-        <Filename Value="Contacts/ucontact.pas"/>
-        <Caret Line="101" Column="40" TopLine="83"/>
-      </Position>
-      <Position>
-        <Filename Value="Contacts/ucontact.pas"/>
-        <Caret Line="102" Column="40" TopLine="84"/>
-      </Position>
-      <Position>
-        <Filename Value="Contacts/ucontact.pas"/>
-        <Caret Line="101" Column="40" TopLine="83"/>
-      </Position>
-      <Position>
-        <Filename Value="Contacts/ucontact.pas"/>
-        <Caret Line="102" Column="40" TopLine="84"/>
-      </Position>
-      <Position>
-        <Filename Value="DM/udm.pas"/>
-        <Caret Line="31" Column="51" TopLine="11"/>
-      </Position>
-      <Position>
-        <Filename Value="Contacts/ucontact.pas"/>
-        <Caret Line="97" Column="60" TopLine="79"/>
-      </Position>
       <Position>
         <Filename Value="DM/udm.pas"/>
         <Caret Line="32" Column="45" TopLine="12"/>
@@ -205,6 +115,94 @@
       <Position>
         <Filename Value="Principale/uprincipale.pas"/>
         <Caret Line="53" Column="32" TopLine="28"/>
+      </Position>
+      <Position>
+        <Filename Value="Societe/usociete.pas"/>
+        <Caret Line="73" Column="34" TopLine="56"/>
+      </Position>
+      <Position>
+        <Filename Value="Societe/usociete.pas"/>
+        <Caret Line="74" Column="18" TopLine="65"/>
+      </Position>
+      <Position>
+        <Filename Value="Societe/usociete.pas"/>
+        <Caret Line="52" Column="22" TopLine="39"/>
+      </Position>
+      <Position>
+        <Filename Value="Contacts/ucontact.pas"/>
+        <Caret Line="162" Column="51" TopLine="137"/>
+      </Position>
+      <Position>
+        <Filename Value="Contacts/ucontact.pas"/>
+        <Caret Line="129" Column="4" TopLine="127"/>
+      </Position>
+      <Position>
+        <Filename Value="Contacts/ucontact.pas"/>
+        <Caret Line="118" Column="3" TopLine="116"/>
+      </Position>
+      <Position>
+        <Filename Value="Principale/uprincipale.pas"/>
+        <Caret Line="39" Column="52" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="Principale/uprincipale.pas"/>
+        <Caret Line="42" Column="63" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="Principale/uprincipale.pas"/>
+        <Caret Line="41" Column="57" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="Contacts/ucontact.pas"/>
+        <Caret Line="155" Column="43" TopLine="138"/>
+      </Position>
+      <Position>
+        <Filename Value="Contacts/ucontact.pas"/>
+        <Caret Line="77" Column="38" TopLine="61"/>
+      </Position>
+      <Position>
+        <Filename Value="Contacts/ucontact.pas"/>
+        <Caret Line="142" Column="26" TopLine="140"/>
+      </Position>
+      <Position>
+        <Filename Value="Contacts/ucontact.pas"/>
+        <Caret Line="143" Column="87" TopLine="140"/>
+      </Position>
+      <Position>
+        <Filename Value="Contacts/ucontact.pas"/>
+        <Caret Line="142" Column="3" TopLine="140"/>
+      </Position>
+      <Position>
+        <Filename Value="Contacts/ucontact.pas"/>
+        <Caret Line="143" Column="3" TopLine="141"/>
+      </Position>
+      <Position>
+        <Filename Value="Contacts/ucontact.pas"/>
+        <Caret Line="142" Column="3" TopLine="140"/>
+      </Position>
+      <Position>
+        <Filename Value="Contacts/ucontact.pas"/>
+        <Caret Line="149" Column="3" TopLine="147"/>
+      </Position>
+      <Position>
+        <Filename Value="Contacts/ucontact.pas"/>
+        <Caret Line="109" Column="82" TopLine="104"/>
+      </Position>
+      <Position>
+        <Filename Value="Principale/uprincipale.pas"/>
+        <Caret Line="48" Column="66" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="Principale/uprincipale.pas"/>
+        <Caret Line="56" Column="3" TopLine="38"/>
+      </Position>
+      <Position>
+        <Filename Value="Contacts/ucontact.pas"/>
+        <Caret Line="107" Column="17" TopLine="82"/>
+      </Position>
+      <Position>
+        <Filename Value="Principale/uprincipale.pas"/>
+        <Caret Line="48" Column="17" TopLine="8"/>
       </Position>
     </JumpHistory>
     <RunParams>
